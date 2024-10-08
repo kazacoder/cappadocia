@@ -9,10 +9,138 @@
 }
 
 @font-face {
-    font-family: Spectral;
+    font-family: SpectralSemiBold;
     src: url('../fonts/Spectralscsemibold.ttf');
 }
 
 body {
     font-family: Montserrat, sans-serif;
+    background-color: #d5d9da;
 }
+
+.main-image {
+    background-image: url("../images/main-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 811px;
+}
+
+.header {
+    background-color: #dde0db;
+    padding: 16px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    font-size: 0;
+}
+
+.header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu {
+    margin-left: 354px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 28px;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    color: rgb(70, 80, 85);
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.header-actions {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 94px;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 11px;
+    padding: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.button.button-transparent {
+    color: rgb(121, 136, 144);
+    background-color: transparent;
+    border: 1px solid #818282;
+    width: 205px;
+}
+
+.gallery {
+    padding: 102px 0 55px 0;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    font-family: SpectralSemiBold, sans-serif;
+    color: rgb(47, 40, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.gallery-description {
+    font-size: 18px;
+    color: rgb(62, 52, 44);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.gallery-items {
+    margin-left: -12px;
+    margin-right: -12px;
+    font-size: 0;
+}
+
+.gallery-item {
+    margin: 12px 11px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 384px;
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.gallery-item.gallery-item-big {
+    width: 792px;
+}
+
+.gallery-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+
