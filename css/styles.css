@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url('../fonts/Spectralscsemibold.ttf');
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
