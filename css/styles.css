@@ -28,6 +28,9 @@ body {
 .header {
     background-color: #dde0db;
     padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .container {
@@ -39,7 +42,7 @@ body {
     font-size: 0;
 }
 
-.header .logo {
+.logo {
     display: inline-block;
     vertical-align: middle;
 }
@@ -66,6 +69,7 @@ body {
     color: rgb(70, 80, 85);
     line-height: 1.2;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header-actions {
@@ -81,13 +85,13 @@ body {
     border-radius: 20px;
     cursor: pointer;
     border: 0;
+    width: 205px;
 }
 
 .button.button-transparent {
     color: rgb(121, 136, 144);
     background-color: transparent;
     border: 1px solid #818282;
-    width: 205px;
 }
 
 .gallery {
@@ -143,4 +147,127 @@ body {
     position: absolute;
 }
 
+.gallery-eye {
+    display: none;
+    opacity: 0.6;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 290px;
+}
 
+.gallery-eye img {
+    vertical-align: middle;
+}
+
+.gallery-item:hover .gallery-eye {
+    display: block;
+    cursor: pointer;
+}
+
+.tours {
+    padding: 54px 0 88px 0;
+}
+
+.tours h2 {
+    font-size: 40px;
+    font-family: SpectralSemiBold, sans-serif;
+    color: rgb(47, 40, 34);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tour-items {
+    margin-left: -12px;
+    margin-right: -12px;
+    font-size: 0;
+}
+
+.tour-item {
+    margin: 0 12px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 384px;
+    position: relative;
+}
+
+.tour-item-info {
+    background-color: #31393f;
+    padding: 22px 22px 40px 22px;
+}
+.tour-item-text {
+    font-size: 22px;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.tour-item-action {
+    text-align: center;
+}
+
+.button.button-filled {
+    background-color: #da8246;
+    font-size: 18px;
+    color: rgb(37, 41, 43);
+}
+
+.button.button-filled:hover {
+    box-shadow: 0px 4px 14.25px 0.75px rgba(217, 149, 103, 0.8);
+}
+
+
+.fixed-block {
+    width: 46px;
+    height: 46px;
+    background-color: #da8246;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 0 0 0 5px;
+}
+
+.fixed-block img {
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #31393f;
+    padding: 54px 0 49px 0;
+    font-size: 0;
+}
+
+.footer .contacts {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 899px;
+}
+
+
+.footer .contacts .contact-text {
+    font-size: 18px;
+    color: rgb(167, 185, 197);
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+
+.footer .contacts .contact-phone {
+    font-size: 14px;
+    color: rgb(131, 145, 156);
+    margin-bottom: 7px;
+    line-height: 1;
+}
+.footer .contacts .contact-phone:last-child {
+    margin-bottom: 0px;
+}
